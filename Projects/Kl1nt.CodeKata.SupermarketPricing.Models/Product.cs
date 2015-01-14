@@ -9,5 +9,6 @@ namespace Kl1nt.CodeKata.SupermarketPricing.Models
     public class Product
     {
         public virtual string Name { get; set; }
+        public virtual ProductUnit Unit { get; set; }
     }
 }
