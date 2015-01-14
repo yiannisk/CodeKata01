@@ -6,14 +6,15 @@
 
         public virtual decimal Price { get; set; }
 
-        public virtual ProductInBasket ToBasket()
+        public virtual ProductInBasket ToBasket(decimal quantity)
         {
             return new ProductInBasket
             {
                 Price = Price,
                 Name = Name,
                 OfferQuantity = OfferQuantity,
-                Unit = Unit
+                Unit = Unit,
+                Quantity = quantity
             };
         }
     }

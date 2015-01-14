@@ -59,8 +59,7 @@ namespace Kl1nt.CodeKata.SupermarketPricing.Models.Tests
                 Unit = ProductUnit.Kilos
             };
 
-            var halfAKiloOfFeta = fetaCheese.ToBasket();
-            halfAKiloOfFeta.Quantity = 0.5m;
+            var halfAKiloOfFeta = fetaCheese.ToBasket(0.5m);
         }
     }
 }
